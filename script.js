@@ -11,13 +11,10 @@ $(function () {
   // useful when saving the description in local storage?
   $('.saveBtn').click(function(event){
     event.preventDefault();
-    // var savedInput = JSON.parse(localStorage.getItem('input')) || []
-    // var input = {
     var scheduleItem = $(this).siblings('.description').val();
-    var time = $(this).parent().attr("id");
-    
-  //   savedInput.push(input);
-    localStorage.setItem(time, scheduleItem);
+    var hour = $(this).parent().attr("id");
+
+    localStorage.setItem(hour, scheduleItem);
   });
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
@@ -27,73 +24,73 @@ $(function () {
   var currentHour = dayjs().hour();
   
   var timeBlock09 = dayjs(09);
-  if (currentHour == timeBlock09) {
+  if (dayjs(currentHour).isSame(dayjs(timeBlock09))) {
     $('#hour-09').addClass("present");
-  } else if (currentHour > timeBlock09) {
+  } else if (dayjs(currentHour).isAfter(dayjs(timeBlock09))) {
     $('#hour-09').addClass("past");
   } else {
     $('#hour-09').addClass("future");
   }
   var timeBlock10 = dayjs(10);
-  if (currentHour == timeBlock10) {
+  if (dayjs(currentHour).isSame(dayjs(timeBlock10))) {
     $('#hour-10').addClass("present");
-  } else if (currentHour > timeBlock10) {
+  } else if (dayjs(currentHour).isAfter(dayjs(timeBlock10))) {
     $('#hour-10').addClass("past");
   } else {
     $('#hour-10').addClass("future");
   }
   var timeBlock11 = dayjs(11);
-  if (currentHour == timeBlock11) {
+  if (dayjs(currentHour).isSame(dayjs(timeBlock11))) {
     $('#hour-11').addClass("present");
-  } else if (currentHour > timeBlock11) {
+  } else if (dayjs(currentHour).isAfter(dayjs(timeBlock11))) {
     $('#hour-11').addClass("past");
   } else {
     $('#hour-11').addClass("future");
   }
   var timeBlock12 = dayjs(12);
-  if (currentHour == timeBlock12) {
+  if (dayjs(currentHour).isSame(dayjs(timeBlock12))) {
     $('#hour-12').addClass("present");
-  } else if (currentHour > timeBlock12) {
+  } else if (dayjs(currentHour).isAfter(dayjs(timeBlock12))) {
     $('#hour-12').addClass("past");
   } else {
     $('#hour-12').addClass("future");
   }
   var timeBlock13 = dayjs(13);
-  if (currentHour == timeBlock13) {
+  if (dayjs(currentHour).isSame(dayjs(timeBlock13))) {
     $('#hour-13').addClass("present");
-  } else if (currentHour > timeBlock13) {
+  } else if (dayjs(currentHour).isAfter(dayjs(timeBlock13))) {
     $('#hour-13').addClass("past");
   } else {
     $('#hour-13').addClass("future");
   }
   var timeBlock14 = dayjs(14);
-  if (currentHour == timeBlock14) {
+  if (dayjs(currentHour).isSame(dayjs(timeBlock14))) {
     $('#hour-14').addClass("present");
-  } else if (currentHour > timeBlock14) {
+  } else if (dayjs(currentHour).isAfter(dayjs(timeBlock14))) {
     $('#hour-14').addClass("past");
   } else {
     $('#hour-14').addClass("future");
   }
   var timeBlock15 = dayjs(15);
-  if (currentHour == timeBlock15) {
+  if (dayjs(currentHour).isSame(dayjs(timeBlock15))) {
     $('#hour-15').addClass("present");
-  } else if (currentHour > timeBlock15) {
+  } else if (dayjs(currentHour).isAfter(dayjs(timeBlock15))) {
     $('#hour-15').addClass("past");
   } else {
     $('#hour-15').addClass("future");
   }
   var timeBlock16 = dayjs(16);
-  if (currentHour == timeBlock16) {
+  if (dayjs(currentHour).isSame(dayjs(timeBlock16))) {
     $('#hour-16').addClass("present");
-  } else if (currentHour > timeBlock16) {
+  } else if (dayjs(currentHour).isAfter(dayjs(timeBlock16))) {
     $('#hour-16').addClass("past");
   } else {
     $('#hour-16').addClass("future");
   }
   var timeBlock17 = dayjs(17);
-  if (currentHour == timeBlock17) {
+  if (dayjs(currentHour).isSame(dayjs(timeBlock17))) {
     $('#hour-17').addClass("present");
-  } else if (currentHour > timeBlock17) {
+  } else if (dayjs(currentHour).isAfter(dayjs(timeBlock17))) {
     $('#hour-17').addClass("past");
   } else {
     $('#hour-17').addClass("future");
