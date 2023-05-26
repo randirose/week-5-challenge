@@ -2,6 +2,11 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
+// button at top of page to clear all events for that day and local storage if the user wishes to
+$('.btn-secondary').click(function(){
+  $('.description').text("");
+  localStorage.clear();
+})
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -115,4 +120,12 @@ $(function () {
   // TODO: Add code to display the current date in the header of the page.
   var currentDay = dayjs().format('MMM D, YYYY');
 $('#currentDay').text(currentDay);
+
+// code for individual close buttons on each time slot to clear that event if the user wishes to
+$('.btn-close').click(function(){
+  var scheduleItem = $(this).siblings('.description');
+  var hour = $(this).parent().attr("id");
+  scheduleItem.text("");
+  localStorage.removeItem(hour, scheduleItem);
+})
 });

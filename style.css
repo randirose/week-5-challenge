@@ -16,10 +16,6 @@ textarea {
   white-space: pre-wrap;
 }
 
-/* .description::placeholder {
-  display: inline-block;
-  color: white;
-} */
 
 .time-block {
   border-radius: 15px;
@@ -51,6 +47,7 @@ textarea {
 }
 
 .saveBtn {
+  display: block;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -62,3 +59,8 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+/* .buttons {
+  display: flex;
+
+} */
