@@ -123,8 +123,8 @@ $('#currentDay').text(currentDay);
 
 // code for individual close buttons on each time slot to clear that event if the user wishes to
 $('.btn-close').click(function(){
-  var scheduleItem = $(this).siblings('.description');
-  var hour = $(this).parent().attr("id");
+  var scheduleItem = $(this).siblings(".description");
+  var hour = $(this).parent("div").parent("section").attr("id");
   scheduleItem.text("");
   localStorage.removeItem(hour, scheduleItem);
 })
