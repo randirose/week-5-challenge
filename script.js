@@ -1,12 +1,11 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
-
-// button at top of page to clear all events for that day and local storage if the user wishes to
+// ADDITIONAL: button at top of page to clear all events for that day and local storage if the user wishes to
 $('.btn-secondary').click(function(){
   $('.description').text("");
   localStorage.clear();
-})
+});
+// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
+// the code isn't run until the browser has finished rendering all the elements
+// in the html.
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -102,7 +101,6 @@ $(function () {
   }
   
   
-  //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
@@ -121,7 +119,7 @@ $(function () {
   var currentDay = dayjs().format('MMM D, YYYY');
 $('#currentDay').text(currentDay);
 
-// code for individual close buttons on each time slot to clear that event if the user wishes to
+// ADDITIONAL: code for individual close buttons on each time slot to clear that specific hour/event if the user wishes to
 $('.close').click(function(){
   var scheduleItem = $(this).siblings(".description");
   var hour = $(this).parent().attr("id");
