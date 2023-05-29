@@ -73,3 +73,14 @@ textarea {
   font-size: 40px;
   transition: all 0.3s ease-in-out;
 }
+
+.btn-secondary {
+  border: none;
+  background-color: darkgray;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  border: solid 3px black;
+  color: black;
+}
