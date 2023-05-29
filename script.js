@@ -117,7 +117,7 @@ $(function () {
 
   // TODO: Add code to display the current date in the header of the page.
   var currentDay = dayjs().format('MMM D, YYYY');
-$('#currentDay').text(currentDay);
+$('#currentDay').text("Today is " + currentDay);
 
 // ADDITIONAL: code for individual close buttons on each time slot to clear that specific hour/event if the user wishes to
 $('.close').click(function(){
