@@ -60,7 +60,16 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-/* .buttons {
-  display: flex;
+.close {
+  border: none;
+  background-color: darkgray;
+}
 
-} */
+.close span {
+  font-size: 25px
+}
+
+.close span:hover {
+  font-size: 40px;
+  transition: all 0.3s ease-in-out;
+}
