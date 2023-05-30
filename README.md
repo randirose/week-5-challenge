@@ -38,4 +38,8 @@ You can find the published GitHub page for this project at: https://randirose.gi
 
 ## Features
 
-- In addition
+In addition to the requirements listed above in Acceptance Criteria, I've also added several additional features to this project:  
+  
+- A 'Clear Day' button at the top of the page for the user to clear all of localStorage.  
+- A color-coded key in the header to show the user what each color-coded hour shows. The key uses Bootstrap's grid system to display differently when on smaller devices. 
+- A clear button on each specific hour that only clears that hour's event from localStorage and from that hour's text area.  
