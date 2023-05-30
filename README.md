@@ -32,14 +32,10 @@ THEN the saved events persist
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+You can find the published GitHub page for this project at: https://randirose.github.io/week-5-challenge
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+    ![Screenshot of Work Day Scheduler ](assets/screenshot_scheduler.png)
 
 ## Features
 
-If your project has a lot of features, list them here.
+- In addition
