@@ -61,7 +61,12 @@ textarea {
 }
 
 .close {
-  border: none;
+  border-left: 1px solid black;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
   background-color: darkgray;
 }
 
